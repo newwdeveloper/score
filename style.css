@@ -1,0 +1,102 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+}
+
+img {
+  width: 100%; /* Make it responsive */
+  max-height: 300px; /* Sets a maximum height to prevent it from getting too tall */
+  height: auto; /* Maintains the aspect ratio */
+  object-fit: cover; /* Maintain aspect ratio, cropping if necessary */
+}
+#para1 {
+  font-size: 1.5rem;
+  width: 100%;
+  border: 1px solid black;
+  margin-top: 2px;
+  margin-bottom: 8px;
+}
+.score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin-top: 5px;
+  max-height: 3rem;
+  width: 100%;
+}
+#one {
+  margin-right: 0.75rem;
+}
+#two {
+  margin-left: 0.75rem;
+}
+h3 {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+  margin-left: 30%;
+}
+#para2 {
+  width: 100%;
+  margin: 5px 0;
+  font-size: 1.25rem;
+  border: 1px solid black;
+}
+#count {
+  width: 2.8rem;
+  font-size: 1.5rem;
+  text-align: center;
+  border-color: blue;
+  color: red;
+  margin-bottom: 1rem;
+}
+.btn {
+  display: flex;
+}
+#btn1,
+#btn2,
+#btn3 {
+  width: 33%;
+  height: 3rem;
+  padding: 5px;
+  font-size: 1.5rem;
+}
+#btn1 {
+  background-color: blue;
+}
+#btn1:hover {
+  background-color: rgb(51, 51, 127);
+  transform: scale(1.1);
+}
+#btn2 {
+  background-color: red;
+}
+#btn2:hover {
+  background-color: rgb(221, 106, 106);
+  transform: scale(1.1);
+}
+#btn3 {
+  background-color: rgb(212, 178, 178);
+}
+#btn3:hover {
+  background-color: rgb(150, 126, 126);
+  transform: scale(1.1);
+}
+#btn1,
+#btn2,
+#btn3:hover {
+  cursor: pointer;
+}
