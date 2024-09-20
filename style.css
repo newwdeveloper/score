@@ -54,6 +54,7 @@ h3 {
   margin: 5px 0;
   font-size: 1.25rem;
   border: 1px solid black;
+  text-align: center;
 }
 #count {
   width: 2.8rem;
