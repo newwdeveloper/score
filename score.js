@@ -34,9 +34,16 @@ btnSet.addEventListener("click", function (event) {
         result.style.textAlign = "center";
         player1Win += 1; // Increment player 1's wins
         game1.innerText = player1Win; // Display player 1's wins
+        gameReset.disabled = true;
 
         if (player1Win === totalGamesToWin) {
           result.innerText = "won by player 1, congratulations";
+          btnPlayer1.disabled = true;
+          btnPlayer2.disabled = true;
+          btnGoal.disabled = true;
+          btnReset.disabled = true;
+          result.style.color = "white";
+          gameReset.disabled = false;
         }
       }
     } else if (event.target === btnPlayer2) {
@@ -51,8 +58,15 @@ btnSet.addEventListener("click", function (event) {
         result.style.textAlign = "center";
         player2Win += 1; // Increment player 2's wins
         game2.innerText = player2Win; // Display player 2's wins
+        gameReset.disabled = true;
         if (player2Win === totalGamesToWin) {
           result.innerText = "won by player 2, congratulations";
+          btnPlayer1.disabled = true;
+          btnPlayer2.disabled = true;
+          btnGoal.disabled = true;
+          btnReset.disabled = true;
+          result.style.color = "white";
+          gameReset.disabled = false;
         }
       }
     } else if (event.target === btnReset) {
@@ -87,4 +101,5 @@ gameReset.addEventListener("click", function () {
   btnPlayer1.disabled = false;
   btnPlayer2.disabled = false;
   btnGoal.disabled = false;
+  btnReset.disabled = false;
 });
